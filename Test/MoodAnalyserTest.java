@@ -2,15 +2,8 @@ import org.junit.Test;
 
 public class MoodAnalyserTest {
     @Test
-    public void testMoodAnalysisReturnSad () {
-        MoodAnalyser moodAnalyser = new MoodAnalyser("I am in Sad Mood");
-        String mood = moodAnalyser.analyseMood();
-        System.out.println(mood);
-    }
-
-    @Test
-    public void testMoodAnalysisReturnHappy() {
-        MoodAnalyser moodAnalyser = new MoodAnalyser("I am in Happy Mood");
+    public void testMoodAnalysisReturnNullException () throws Exception{
+        MoodAnalyser moodAnalyser = new MoodAnalyser(null);
         String mood = moodAnalyser.analyseMood();
         System.out.println(mood);
     }
