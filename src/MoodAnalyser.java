@@ -12,7 +12,7 @@ public class MoodAnalyser {
             else
                 return "HAPPY";
         }catch (NullPointerException e){
-            return e.getMessage();
+            return "HAPPY";
         }
     }
 }
